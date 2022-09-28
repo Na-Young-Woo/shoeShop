@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=1NWBO8L81J8
 
 https://github.com/malianmoussa/pharmacie/tree/70491b2a56ccc67623e83bb0a2d0f4dab92cce95
 참고함
-
+구조분해, children 문법 다시 보기(기억 잘 안난다..)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

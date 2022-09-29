@@ -36,7 +36,7 @@ const Header = () => {
           <div className="row">
             <div className="col-6 d-flex align-items-center">
               <Link className="navbar-brand" to="/">
-                <img src="logo" alt="images/logo.png" />
+                <img src="/images/logo.png" alt="logo" />
               </Link>
             </div>
           </div>

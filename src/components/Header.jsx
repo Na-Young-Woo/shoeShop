@@ -31,15 +31,35 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* header */}
       <div className="header">
         <div className="container">
-          <div className="row">
-            <div className="col-6 d-flex align-items-center">
-              <Link className="navbar-brand" to="/">
-                <img src="/images/logo.png" alt="logo" />
-              </Link>
+          {/* mobile header */}
+          <div className="mobile-header">
+            <div className="container">
+              <div className="row">
+                <div className="col-6 d-flex align-items-center">
+                  <Link className="navbar-brand" to="/">
+                    <img src="/images/logo.png" alt="logo" />
+                  </Link>
+                </div>
+                <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
+                  {}
+                  <Link to="/cart" className="cart-mobile-icon">
+                    <i className="fas fa-shopping-bag"></i>
+                    <span className="bage">test{}</span>
+                  </Link>
+                </div>
+                <div className="col-12 d-flex align-item-center">
+                  <form action="">
+                    <input type="search" />
+                    <button></button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
+          <div className="pc-header">test</div>
         </div>
       </div>
     </div>

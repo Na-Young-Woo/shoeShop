@@ -59,7 +59,32 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="pc-header">test</div>
+          <div className="pc-header">
+            <div className="row">
+              <div className="col-md-3 col-6 d-flex align-items-center">
+                <Link className="navbar-brand" to="/">
+                  <img src="/images/logo.png" alt="logo" />
+                </Link>
+              </div>
+              <div className="col-md-6 col-8 d-flex align-items-center">
+                <form action="" className="input-group">
+                  <input
+                    type="search"
+                    className="form-control rounded search"
+                  />
+                  <button className="search-button">search</button>
+                </form>
+              </div>
+              <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
+                test{}
+                <Link to="/cart">
+                  <i className="fas fa-shopping-bag">
+                    <span className="badge"></span>
+                  </i>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

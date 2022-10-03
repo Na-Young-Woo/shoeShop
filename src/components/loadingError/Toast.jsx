@@ -5,10 +5,10 @@ const Toast = () => {
     <div>
       <ToastContainer
         position="top-right"
-        hideProgressBar={flase}
-        newestOnTop={flase}
-        closeOnClick
-        rtl={flase}
+        // hideProgressBar={false}
+        // newestOnTop={false}
+        // closeOnClick
+        // rtl={false}
       />
       <ToastContainer />
     </div>

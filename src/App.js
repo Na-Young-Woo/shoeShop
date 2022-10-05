@@ -6,6 +6,7 @@ import HomeScreen from "./screens/HomeScreen";
 import Login from "./screens/Login";
 import ProfileScreen from "./screens/ProfileScreen";
 import Register from "./screens/Register";
+import NotFound from "./screens/NotFound";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/profile" element={<ProfileScreen />} />
 
         <Route path="register" element={<Register />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

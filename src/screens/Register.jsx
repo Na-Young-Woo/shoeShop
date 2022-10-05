@@ -7,7 +7,7 @@ const Register = () => {
   return (
     <div>
       <Header />
-      <div className="container d-flex flex-column justify-content-center align-item-center login-center">
+      <div className="container d-flex flex-column justify-content-center aligns-item-center login-center">
         <form action="" className="Login col-md-4 col-lg-8 col-11">
           <input type="text" placeholder="Username" />
           <input type="email" placeholder="E-mail" />

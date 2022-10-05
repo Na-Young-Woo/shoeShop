@@ -50,7 +50,7 @@ const Header = () => {
                     <span className="bage">test{}</span>
                   </Link>
                 </div>
-                <div className="col-12 d-flex align-item-center">
+                <div className="col-12 d-flex align-items-center">
                   <form action="">
                     <input type="search" />
                     <button></button>

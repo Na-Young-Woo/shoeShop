@@ -9,6 +9,7 @@ import Register from "./screens/Register";
 import NotFound from "./screens/NotFound";
 import CartScreen from "./screens/CartScreen";
 import ShippingScreen from "./screens/ShippingScreen";
+import SingleProduct from "./screens/SingleProduct";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         {/* id 추가 예정 */}
         <Route path="/cart" element={<CartScreen />} />
         <Route path="shipping" element={<ShippingScreen />} />
+        <Route path="product/:id" element={<SingleProduct />} />
       </Routes>
     </Router>
   );

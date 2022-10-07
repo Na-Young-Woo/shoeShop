@@ -9,6 +9,9 @@ const ShippingScreen = () => {
         <form action="" className="Login col-md-8 col-lg-4 col-11">
           <h6>DELEVERY ADRESS</h6>
           <input type="text" placeholder="Enter adress" required />
+          <input type="text" placeholder="Enter city" />
+          <input type="text" placeholder="Enter postal code" />
+          <input type="text" placeholder="Enter contry" />
           <button type="submit">Continue</button>
         </form>
       </div>

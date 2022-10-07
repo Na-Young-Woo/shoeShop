@@ -8,6 +8,7 @@ import ProfileScreen from "./screens/ProfileScreen";
 import Register from "./screens/Register";
 import NotFound from "./screens/NotFound";
 import CartScreen from "./screens/CartScreen";
+import ShippingScreen from "./screens/ShippingScreen";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         {/* id 추가 예정 */}
         <Route path="/cart" element={<CartScreen />} />
+        <Route path="shipping" element={<ShippingScreen />} />
       </Routes>
     </Router>
   );

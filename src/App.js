@@ -21,10 +21,10 @@ const App = () => {
 
         <Route path="register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
-        {/* id 추가 예정 */}
         <Route path="/cart" element={<CartScreen />} />
-        <Route path="shipping" element={<ShippingScreen />} />
         <Route path="product/:id" element={<SingleProduct />} />
+
+        <Route path="shipping" element={<ShippingScreen />} />
       </Routes>
     </Router>
   );

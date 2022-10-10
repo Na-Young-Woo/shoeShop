@@ -10,6 +10,7 @@ import NotFound from "./screens/NotFound";
 import CartScreen from "./screens/CartScreen";
 import ShippingScreen from "./screens/ShippingScreen";
 import SingleProduct from "./screens/SingleProduct";
+import PaymentScreen from "./screens/PaymentScreen";
 
 const App = () => {
   return (
@@ -19,12 +20,13 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<ProfileScreen />} />
 
-        <Route path="register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/cart" element={<CartScreen />} />
-        <Route path="product/:id" element={<SingleProduct />} />
+        <Route path="/product/:id" element={<SingleProduct />} />
 
-        <Route path="shipping" element={<ShippingScreen />} />
+        <Route path="/shipping" element={<ShippingScreen />} />
+        <Route path="/payment" element={<PaymentScreen />} />
       </Routes>
     </Router>
   );

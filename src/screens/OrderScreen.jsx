@@ -5,7 +5,7 @@ const OrderScreen = () => {
   return (
     <div>
       <Header />
-      <div className="container">{}</div>
+      <div className="container">test</div>
     </div>
   );
 };

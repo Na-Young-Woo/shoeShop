@@ -27,13 +27,13 @@ const App = () => {
 
         <Route exact element={<PrivateRoute />}>
           <Route path="/profile" element={<ProfileScreen />} />
+          <Route path="/shipping" element={<ShippingScreen />} />
+          <Route path="/payment" element={<PaymentScreen />} />
+          <Route path="/placeorder" element={<PlaceOrderScreen />} />
+          <Route path="/order/:id" element={<OrderScreen />} />
         </Route>
 
         <Route path="/cart/:id" element={<CartScreen />} />
-        <Route path="/shipping" element={<ShippingScreen />} />
-        <Route path="/payment" element={<PaymentScreen />} />
-        <Route path="/placeorder" element={<PlaceOrderScreen />} />
-        <Route path="/order/:id" element={<OrderScreen />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

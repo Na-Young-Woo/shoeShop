@@ -1,9 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { logout } from "../Redux/Actions/userActions";
 
 const Header = () => {
+  const [keyword, setKeyword] = useState();
+  const dispatch = useDispatch();
+  let history = useNavigate();
+  const cart = useSelector((state) => state.cart);
+  const { cartItem } = cart;
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (keyword.trim()) {
+      history.push(`/search/${keyword}`);
+    } else {
+      history.push("/");
+    }
+  };
+
   return (
     <div>
+      {/* Top Header */}
       <div className="Announcement">
         <div className="container ">
           <div className="row">
@@ -44,10 +67,14 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
-                  {}
+                  {userInfo ? (
+                    <div className="btn-group"></div>
+                  ) : (
+                    <div className="btn-group"></div>
+                  )}
                   <Link to="/cart" className="cart-mobile-icon">
                     <i className="fas fa-shopping-bag"></i>
-                    <span className="bage">test{}</span>
+                    <span className="bage">test{cartItem.length}</span>
                   </Link>
                 </div>
                 <div className="col-12 d-flex align-items-center">

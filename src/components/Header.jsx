@@ -7,6 +7,7 @@ const Header = () => {
   const [keyword, setKeyword] = useState();
   const dispatch = useDispatch();
   let history = useNavigate();
+  console.log("test");
   const cart = useSelector((state) => state.cart);
   const { cartItem } = cart;
   const userLogin = useSelector((state) => state.userLogin);
